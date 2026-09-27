@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fitness Membership</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            background: white;
+            font-family: "Open Sans", Arial, sans-serif;
+        }
+
+
+        /* =========================
+           TOP HEADER
+        ========================= */
+
+        .header {
+            width: 100%;
+            height: 110px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 0 24px;
+
+            background: white;
+        }
+
+
+        /* NicePage logo */
+
+        .logo {
+            width: 245px;
+            height: auto;
+        }
+
+
+        /* =========================
+           HAMBURGER MENU
+        ========================= */
+
+        .menu-button {
+            width: 45px;
+            height: 45px;
+
+            border: none;
+            background: transparent;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            gap: 6px;
+
+            padding: 0;
+        }
+
+        .menu-button span {
+            width: 32px;
+            height: 4px;
+
+            background: #777;
+
+            border-radius: 5px;
+        }
+
+
+        /* =========================
+           MAIN IMAGE / HERO
+        ========================= */
+
+        .hero {
+            width: 100%;
+            min-height: calc(100vh - 110px);
+
+            background-image: url("image1.jpg");
+
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+
+            padding: 120px 27px 80px;
+
+            position: relative;
+        }
+
+
+        /* Slight blue overlay */
+
+        .hero::before {
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            background: rgba(0, 50, 120, 0.08);
+
+            pointer-events: none;
+        }
+
+
+        /* Content */
+
+        .content {
+            position: relative;
+            z-index: 1;
+        }
+
+
+        /* =========================
+           HEADING
+        ========================= */
+
+        h1 {
+            font-family: "Montserrat", Arial, sans-serif;
+
+            font-size: 43px;
+            line-height: 1.12;
+
+            font-weight: 600;
+
+            color: white;
+
+            margin-bottom: 45px;
+        }
+
+        .price {
+            color: #ffd000;
+        }
+
+
+        /* =========================
+           DESCRIPTION
+        ========================= */
+
+        .description {
+            font-family: "Open Sans", Arial, sans-serif;
+
+            font-size: 21px;
+            line-height: 1.9;
+
+            font-weight: 400;
+
+            color: white;
+
+            margin-bottom: 45px;
+        }
+
+
+        /* =========================
+           FREEPIK TEXT
+        ========================= */
+
+        .credit {
+            font-size: 20px;
+
+            color: white;
+
+            margin-bottom: 45px;
+        }
+
+        .credit strong {
+            font-style: italic;
+            font-weight: 700;
+        }
+
+
+        /* =========================
+           JOIN NOW BUTTON
+        ========================= */
+
+        .join-button {
+            width: 100%;
+            height: 95px;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+
+            background: #ffd000;
+
+            border-radius: 50px;
+
+            text-decoration: none;
+
+            color: #111;
+
+            font-family: "Montserrat", Arial, sans-serif;
+
+            font-size: 21px;
+
+            font-weight: 700;
+
+            letter-spacing: 2px;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <img
+            class="logo"
+            src="https://csite.nicepage.com/Images/logo-w.png"
+            alt="NicePage"
+        >
+
+        <button class="menu-button" aria-label="Menu">
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+    </header>
+
+
+    <!-- MAIN SECTION -->
+
+    <main class="hero">
+
+        <div class="content">
+
+            <h1>
+                Memberships as low<br>
+                as <span class="price">$9.99</span>/month
+            </h1>
+
+
+            <p class="description">
+                We are all about community, inclusiveness,
+                spreading the love (and ENERGY), affordable
+                classes with professional teachers, classes in
+                English, a traditional yoga style for mind-body
+                balance
+            </p>
+
+
+            <p class="credit">
+                Image from <strong>Freepik</strong>
+            </p>
+
+
+            <a href="#" class="join-button">
+                JOIN NOW
+            </a>
+
+        </div>
+
+    </main>
+
+</body>
+</html>
